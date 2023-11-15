@@ -24,9 +24,7 @@ import { jsonasarray } from 'jsonasarray';
 
 ```js
 jsonasarray.forEach(x, (value, key) => console.log(key, value));
-
 // or
-
 x.forEach((value, key) => console.log(key, value));
 ```
 
