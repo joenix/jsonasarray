@@ -24,7 +24,7 @@ x.keys(); // ['z', 'a', 'b', 'c']
 3. values of json
 
 ```js
-x.values(); // ['z', 'a', 'b', 'c']
+x.values(); // [0, 11, 22, 33]
 ```
 
 ## Iterator
