@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "use Json as Array",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joenix/jsonasarray.git"
+  },
   "type": "module",
   "keywords": [
     "json",
