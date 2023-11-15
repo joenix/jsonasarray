@@ -1,0 +1,14 @@
+{
+  "name": "jsonasarray",
+  "version": "0.0.1",
+  "description": "use Json as Array",
+  "main": "index.js",
+  "type": "module",
+  "keywords": [
+    "json",
+    "array",
+    "jsonasarray"
+  ],
+  "author": "joenix",
+  "license": "MIT"
+}
