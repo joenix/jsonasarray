@@ -33,19 +33,6 @@ export const properties = {
 export const empty = (scope) => [null, undefined].includes(scope);
 
 /**
- * Functional Count - New Ability
- * ======== ======== ========
- */
-export const count = () => {
-  // Extension Length on Prototype
-  Object.defineProperty(prototype, 'count', {
-    get() {
-      return Object.keys(this).length;
-    },
-  });
-};
-
-/**
  * Functional Make - Api Extension for Json
  * ======== ======== ========
  * @param handler { fn }
@@ -77,9 +64,6 @@ export const make = (handler, name) => {
  * ======== ======== ========
  */
 export const factory = (apis) => {
-  // Extension Length
-  count();
-
   // Extension APIs
   Object.entries(apis).forEach(([name, module]) => make(module, name));
 

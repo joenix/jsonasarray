@@ -1,4 +1,6 @@
-export default function (scope, start = 0, step = scope.count - start, json) {
+import count from './count';
+
+export default function (scope, start = 0, step = count(scope) - start, json) {
   const group = Object.entries(scope);
   const lost = group.splice(start, step, ...Object.entries(json));
 

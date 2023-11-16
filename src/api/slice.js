@@ -1,4 +1,6 @@
-export default function (scope, start = 0, step = scope.count - start) {
+import count from './count';
+
+export default function (scope, start = 0, step = count(scope) - start) {
   let index = -1;
   let set = {};
 

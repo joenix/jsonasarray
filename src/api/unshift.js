@@ -1,3 +1,5 @@
+import count from './count';
+
 export default function (scope, json) {
   const group = Object.entries(scope);
   group.unshift(...Object.entries(json));
@@ -10,5 +12,5 @@ export default function (scope, json) {
     scope[key] = value;
   }
 
-  return scope.count;
+  return count(scope);
 }

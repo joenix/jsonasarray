@@ -1,3 +1,5 @@
+import count from './count';
+
 export default function (scope, callback) {
   const set = [];
 
@@ -7,5 +9,5 @@ export default function (scope, callback) {
     }
   }
 
-  return set.length === scope.count;
+  return set.length === count(scope);
 }

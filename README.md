@@ -40,7 +40,7 @@ const x = { z: 0, a: 11, b: 22, c: 33 };
 #### 1. count of json
 
 ```js
-x.count; // 4
+x.count(); // 4
 ```
 
 #### 2. keys of json
