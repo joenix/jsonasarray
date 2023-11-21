@@ -15,17 +15,28 @@ yarn add jsonasarray
 #### 2. import
 
 ```js
-import { jsonasarray } from 'jsonasarray';
+import jsonasarray from 'jsonasarray';
 ```
 
 > All APIs will be registered in the Object upon importing jsonasarray.
 
-#### 3. use APIs
+#### 3. define APIs
 
 ```js
-jsonasarray.forEach(x, (value, key) => console.log(key, value));
-// or
+// define APIs
+jsonasarray();
+
+// define alias for APIs
+const apis = jsonasarray({ forEach: 'loop' });
+```
+
+#### 4. Use
+
+```js
 x.forEach((value, key) => console.log(key, value));
+
+// or u can also use the original
+apis.loop(x, (value, key) => console.log(key, value));
 ```
 
 ## APIs

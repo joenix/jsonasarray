@@ -1,10 +1,12 @@
-import { noop } from '../index';
+import { noop } from '../code';
 
 export default function (scope, callback = noop) {
   const set = {};
 
   for (const [key, value] of Object.entries(scope)) {
-    set[key] = callback(value, key, scope);
+    if (callback(value, key, scope) === true) {
+      set[key] = value;
+    }
   }
 
   return set;

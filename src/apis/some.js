@@ -1,4 +1,4 @@
-import { noop } from '../index';
+import { noop } from '../code';
 
 export default function (scope, callback = noop) {
   const set = [];

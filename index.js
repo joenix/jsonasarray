@@ -1,1 +1,1 @@
-export { default as jsonasarray } from './src';
+export { default } from './src';

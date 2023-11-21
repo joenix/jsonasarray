@@ -1,6 +1,6 @@
 {
   "name": "jsonasarray",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "use Json as Array",
   "main": "index.js",
   "repository": {
